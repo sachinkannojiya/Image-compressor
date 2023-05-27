@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Compressor</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Compressor</h1>
+    <div class="upload-container">
+      <input type="file" id="file-input" accept="image/*">
+      <label for="file-input" id="upload-label">
+        <i class="fas fa-cloud-upload-alt"></i> Upload Image
+      </label>
+    </div>
+    <div class="image-container">
+      <div class="image-preview">
+        <img id="original-image" src="placeholder.png" alt="Original Image">
+        <div class="overlay"></div>
+        <span class="overlay-text">Original Image</span>
+      </div>
+      <div class="image-preview">
+        <img id="compressed-image" src="placeholder.png" alt="Compressed Image">
+        <div class="overlay"></div>
+        <span class="overlay-text">Compressed Image</span>
+      </div>
+    </div>
+    <a id="download-link" download="compressed_image.jpg">Download Compressed Image</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
